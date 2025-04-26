@@ -45,9 +45,9 @@ $(document).ready(function () {
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
-                alert("Form Submitted Successfully");
+                alert("Form Submitted Successfully"); 
             }, function (error) {
-                console.log('FAILED...', error);
+                console.log('FAILED...', error); 
                 alert("Form Submission Failed! Try Again");
             });
         event.preventDefault();
@@ -59,7 +59,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
+            document.title = "Portfolio | Heritage Solution";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
@@ -71,7 +71,7 @@ document.addEventListener('visibilitychange',
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
+    strings: ["frontend development", "backend development","game development","web designing", "web development","shopify development","e-commerce development", "graphic design", "digital marketing","app development"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -102,7 +102,7 @@ function showSkills(skills) {
             </div>`
     });
     skillsContainer.innerHTML = skillHTML;
-}
+} 
 
 function showProjects(projects) {
     let projectsContainer = document.querySelector("#work .box-container");
@@ -111,10 +111,10 @@ function showProjects(projects) {
         projectHTML += `
         <div class="box tilt">
       <img draggable="false" src="/assets/images/projects/${project.image}.png" alt="project" />
-      <div class="content">
+      <div class="content">  
         <div class="tag">
         <h3>${project.name}</h3>
-        </div>
+        </div> 
         <div class="desc">
           <p>${project.desc}</p>
           <div class="btns">
